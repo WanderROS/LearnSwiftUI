@@ -16,20 +16,20 @@ struct ContentView: View {
     ]
 
     var body: some View {
-        NavigationView{
-            List {
-                ForEach(
-                    fruits,
-                    id: \.self
-                ) { fruit in
-                    Text(fruit)
-                }
-                .onDelete { self.deleteFruit(at :$0) }
-                .onMove { self.moveFruit(from: $0, to: $1) }
+        #if DEBUG
+        VStack(alignment: .leading) {
+            Text("Turtle Rock")
+                .font(.title)
+            HStack {
+                Text("Joshua Tree Nation Park")
+                    .font(.subheadline)
+                Spacer()
+                Text("California")
+                    .font(.subheadline)
             }
-            .navigationTitle("Fruits")
-            .toolbar { EditButton() }
-        }
+        }.padding()
+        #endif
+
     }
     func deleteFruit(at index :IndexSet){
         print(index.first)
