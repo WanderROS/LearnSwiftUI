@@ -32,6 +32,8 @@
 		C12E0333271EDD6D008946F8 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12E0332271EDD6D008946F8 /* Data.swift */; };
 		C12E0335271EE0D9008946F8 /* LandmarkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12E0334271EE0D9008946F8 /* LandmarkRow.swift */; };
 		C12E0337271EE1F7008946F8 /* LandmarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12E0336271EE1F7008946F8 /* LandmarkList.swift */; };
+		C12E0339271EEBB0008946F8 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12E0338271EEBB0008946F8 /* UserData.swift */; };
+		C12E033B271EF289008946F8 /* charleyrivers.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C12E033A271EF289008946F8 /* charleyrivers.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +85,8 @@
 		C12E0332271EDD6D008946F8 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		C12E0334271EE0D9008946F8 /* LandmarkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkRow.swift; sourceTree = "<group>"; };
 		C12E0336271EE1F7008946F8 /* LandmarkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkList.swift; sourceTree = "<group>"; };
+		C12E0338271EEBB0008946F8 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		C12E033A271EF289008946F8 /* charleyrivers.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = charleyrivers.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +178,7 @@
 		C12E030F271E8030008946F8 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				C12E0338271EEBB0008946F8 /* UserData.swift */,
 				C12E0310271E804F008946F8 /* CircleImage.swift */,
 				C12E0312271E81DA008946F8 /* MapView.swift */,
 				C12E0334271EE0D9008946F8 /* LandmarkRow.swift */,
@@ -194,6 +199,7 @@
 		C12E0315271ED21D008946F8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C12E033A271EF289008946F8 /* charleyrivers.jpg */,
 				C12E0320271ED29B008946F8 /* chilkoottrail.jpg */,
 				C12E0321271ED29B008946F8 /* chincoteague.jpg */,
 				C12E031A271ED29B008946F8 /* hiddenlake.jpg */,
@@ -317,6 +323,7 @@
 				C12E0326271ED29C008946F8 /* umbagog.jpg in Resources */,
 				C12E0323271ED29C008946F8 /* stmarylake.jpg in Resources */,
 				C12E0328271ED29C008946F8 /* icybay.jpg in Resources */,
+				C12E033B271EF289008946F8 /* charleyrivers.jpg in Resources */,
 				C12E032A271ED29C008946F8 /* landmarkData.json in Resources */,
 				C12E0329271ED29C008946F8 /* lakemcdonald.jpg in Resources */,
 				C12E0325271ED29C008946F8 /* rainbowlake.jpg in Resources */,
@@ -356,6 +363,7 @@
 				C1183604271CF94F0010D069 /* ContentView.swift in Sources */,
 				C12E0333271EDD6D008946F8 /* Data.swift in Sources */,
 				C12E0313271E81DA008946F8 /* MapView.swift in Sources */,
+				C12E0339271EEBB0008946F8 /* UserData.swift in Sources */,
 				C12E0337271EE1F7008946F8 /* LandmarkList.swift in Sources */,
 				C1183602271CF94F0010D069 /* LearnSwiftUIApp.swift in Sources */,
 				C12E0311271E804F008946F8 /* CircleImage.swift in Sources */,
