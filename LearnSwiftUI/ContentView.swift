@@ -8,28 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var fruits = [
-        "Apple",
-        "Banana",
-        "Papaya",
-        "Mango"
-    ]
-
+    var landmark:Landmark
     var body: some View {
         #if DEBUG
         VStack {
-            MapView().frame(height:300)
+            MapView(coordinate: landmark.locationCoordinate).frame(height:300)
                 .edgesIgnoringSafeArea(.top)
-            CircleImage().offset(y: -130)
+            CircleImage(image:landmark.image).offset(y: -130)
                 .padding(.bottom,-130)
             VStack(alignment: .leading) {
-                Text("Turtle Rock")
+                Text(landmark.name)
                     .font(.title)
                 HStack {
-                    Text("Joshua Tree Nation Park")
+                    Text(landmark.park)
                         .font(.subheadline)
                     Spacer()
-                    Text("California")
+                    Text(landmark.state)
                         .font(.subheadline)
                 }
             }.padding()
@@ -38,18 +32,10 @@ struct ContentView: View {
         #endif
 
     }
-    func deleteFruit(at index :IndexSet){
-        print(index.first)
-        fruits.remove(at: index.first ?? 0 )
-    }
-    func moveFruit(from From:IndexSet,to To:Int){
-        print(From)
-        print(To)
-    }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(landmark: landmarkData[0])
     }
 }
