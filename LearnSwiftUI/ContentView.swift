@@ -17,17 +17,24 @@ struct ContentView: View {
 
     var body: some View {
         #if DEBUG
-        VStack(alignment: .leading) {
-            Text("Turtle Rock")
-                .font(.title)
-            HStack {
-                Text("Joshua Tree Nation Park")
-                    .font(.subheadline)
-                Spacer()
-                Text("California")
-                    .font(.subheadline)
-            }
-        }.padding()
+        VStack {
+            MapView().frame(height:300)
+                .edgesIgnoringSafeArea(.top)
+            CircleImage().offset(y: -130)
+                .padding(.bottom,-130)
+            VStack(alignment: .leading) {
+                Text("Turtle Rock")
+                    .font(.title)
+                HStack {
+                    Text("Joshua Tree Nation Park")
+                        .font(.subheadline)
+                    Spacer()
+                    Text("California")
+                        .font(.subheadline)
+                }
+            }.padding()
+            Spacer()
+        }
         #endif
 
     }
