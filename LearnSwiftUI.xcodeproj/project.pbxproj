@@ -14,6 +14,7 @@
 		C1183614271CF95C0010D069 /* LearnSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1183613271CF95C0010D069 /* LearnSwiftUITests.swift */; };
 		C118361F271CF95C0010D069 /* LearnSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C118361E271CF95C0010D069 /* LearnSwiftUIUITests.swift */; };
 		C12E0311271E804F008946F8 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12E0310271E804F008946F8 /* CircleImage.swift */; };
+		C12E0313271E81DA008946F8 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12E0312271E81DA008946F8 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		C118361E271CF95C0010D069 /* LearnSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnSwiftUIUITests.swift; sourceTree = "<group>"; };
 		C1183620271CF95C0010D069 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C12E0310271E804F008946F8 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		C12E0312271E81DA008946F8 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				C12E0310271E804F008946F8 /* CircleImage.swift */,
+				C12E0312271E81DA008946F8 /* MapView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1183604271CF94F0010D069 /* ContentView.swift in Sources */,
+				C12E0313271E81DA008946F8 /* MapView.swift in Sources */,
 				C1183602271CF94F0010D069 /* LearnSwiftUIApp.swift in Sources */,
 				C12E0311271E804F008946F8 /* CircleImage.swift in Sources */,
 			);
