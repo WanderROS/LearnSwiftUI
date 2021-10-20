@@ -18,6 +18,16 @@ struct CategoryHome: View {
             $0.isFeatured
         }
     }
+    @State var showProfile = false
+    
+    var profileButton: some View{
+        Button(action:{self.showProfile.toggle()}){
+            Image(systemName: "person.crop.circle")
+                .imageScale(.large)
+                .accessibility(label: Text("User Profile"))
+                .padding()
+        }
+    }
     
     var body: some View {
         NavigationView{
@@ -31,8 +41,17 @@ struct CategoryHome: View {
                     key in
                     CategoryRow(categoryName: key,item:self.categories[key]!)
                 }.listRowInsets(EdgeInsets())
+                
+                NavigationLink(
+                    destination: LandmarkList()){
+                    Text("See All")
+                }.padding(.top,40)
             }
                 .navigationBarTitle("Featured")
+            .navigationBarItems(trailing:profileButton)
+            .sheet(isPresented:$showProfile){
+                Text("User Profile")
+            }
         }
         
     }

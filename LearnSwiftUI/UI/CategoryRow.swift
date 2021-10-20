@@ -41,9 +41,11 @@ struct CategoryItem: View{
     var body: some View{
         VStack{
             landmark.image.resizable()
+                .renderingMode(.original)
                 .frame(width: 155, height: 155)
                 .cornerRadius(5)
             Text(landmark.name)
+                .foregroundColor(.primary)
                 .font(.caption)
         }
         .padding(.leading,15)
